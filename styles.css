@@ -135,36 +135,20 @@ nav ul li a:hover {
 
 
 .education {
-    padding-top: 600px;
     text-align: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
     background-color: #000;
-    height: 50vh;
 }
 
-
-.education h2 {
-    color: rgb(255, 255, 255);
-    padding-bottom: 20px;
-}
-.about-text h3 {
-    font-size: 40px;
-    margin-bottom: 15px; 
-    padding-bottom: 20px;
-    display: inline-block;
-    white-space: nowrap; 
-}
-
-.timeline {
+.education-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     max-width: 600px;
     margin: auto;
 }
 
-.timeline-box {
+.education-box {
     background: #222;
     padding: 20px;
     border-radius: 10px;
@@ -172,20 +156,34 @@ nav ul li a:hover {
     width: 80%;
     text-align: left;
     border-left: 5px solid rgb(167, 8, 8);
+    transition: transform 0.3s;
 }
-.timeline-box:hover {
+
+.education-box:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6); 
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6);
 }
 
-.timeline-box.left {
-    align-self: flex-start;
+#testimonials {
+    padding: 60px 20px;
+    background: #222;
+    text-align: center;
 }
 
-.timeline-box.right {
-    align-self: flex-end;
+.project-tile {
+    background: #333;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+    transition: transform 0.3s;
 }
 
+.project-tile:hover {
+    transform: scale(1.05);
+}
 
 footer {
     text-align: center;
@@ -209,76 +207,3 @@ footer {
     background-color: white;
     color: rgb(167, 8, 8);
 }
-
- #testimonials {
-    padding: 60px 20px;
-    background: #222;
-    text-align: center;
-    color: white;
-}
-
-#testimonials h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.project-tile {
-    background: #333;
-    padding: 15px;
-    margin: 10px auto;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
-}
-
-.project-tile:hover {
-    transform: scale(1.05);
-}
-
-.project-tile h3 {
-    color: rgb(167, 8, 8);
-    font-size: 24px;
-}
-
-.project-tile p {
-    font-size: 18px;
-}
-
-
-
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 50px 5%;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .profile-pic {
-        width: 120px;
-        height: 120px;
-    }
-
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-text {
-        text-align: center;
-    }
-
-    .timeline-box {
-        width: 100%;
-    }
-
- 
