@@ -1,0 +1,285 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo img {
+    height: 60px; /* Adjust this to your preferred height */
+    width: auto; /* Maintains aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(167, 8, 8);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Increased height for better layout */
+    padding: 0 10%;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* More spacing between image and text */
+    width: 100%;
+    max-width: 1000px; /* Increased max width */
+    padding-left: 305px;;
+}
+
+.hero-text {
+    max-width: 600px; /* Allow more space for text */
+    text-align: left;
+    font-size: 24px; /* Increase overall text size */
+}
+.hero-text h1 {
+    font-size: 48px; /* Bigger heading */
+    font-weight: bold;
+}
+.hero-text p {
+    font-size: 22px; /* Bigger paragraph text */
+}
+
+.profile-pic {
+    width: 200px; /* Increased size */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgb(167, 8, 8); /* Slightly thicker border */
+}
+.highlight {
+    color:rgb(167, 8, 8);
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #111;
+    height: 50vh;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about h2{
+    font-size: 70px;
+    padding-bottom: 0px;
+}
+
+.about h3{
+    font-size: 30px;
+
+}
+
+.about p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/* Education Section */
+.education {
+    padding-top: 600px;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000;
+    height: 50vh;
+}
+
+
+.education h2 {
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+.about-text h3 {
+    font-size: 40px;
+    margin-bottom: 15px; /* Adjust the spacing as needed */
+    padding-bottom: 20px;
+    display: inline-block;
+    white-space: nowrap; /* Forces text to stay in one line */
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.timeline-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 80%;
+    text-align: left;
+    border-left: 5px solid rgb(167, 8, 8);
+}
+.timeline-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6); /* Red glow effect */
+}
+
+.timeline-box.left {
+    align-self: flex-start;
+}
+
+.timeline-box.right {
+    align-self: flex-end;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    margin-top: 50px;
+}
+
+.contact-btn {
+    background-color: rgb(167, 8, 8);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: rgb(167, 8, 8);
+}
+ /* Testimonials Section */
+ #testimonials {
+    padding: 60px 20px;
+    background: #222;
+    text-align: center;
+    color: white;
+}
+
+#testimonials h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.project-tile {
+    background: #333;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.project-tile h3 {
+    color: rgb(167, 8, 8);
+    font-size: 24px;
+}
+
+.project-tile p {
+    font-size: 18px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 50px 5%;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .timeline-box {
+        width: 100%;
+    }
+
+ 
